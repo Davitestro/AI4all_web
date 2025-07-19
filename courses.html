@@ -23,9 +23,9 @@
       
       <nav>
         <ul class="nav">
-          <li><a href="index.html" class="active">Գլխավոր</a></li>
+          <li><a href="index.html">Գլխավոր</a></li>
           <li><a href="about.html">Մեր Մասին</a></li>
-          <li><a href="courses.html">Դասընթացներ</a></li>
+          <li><a href="courses.html" class="active">Դասընթացներ</a></li>
           <li><a href="blog.html">Բլոգ</a></li>
           <li><a href="contact.html">Կապ</a></li>
         </ul>
@@ -48,7 +48,7 @@
               <span><i class="fas fa-laptop"></i> Օնլայն</span>
             </div>
             <p>Սովորեք հիմքերը, օգտագործեք AI գործիքներ</p>
-            <a href="#" class="btn">Գրանցվել</a>
+            <a href="#register" class="btn">Գրանցվել</a>
           </div>
         </div>
         
@@ -58,25 +58,53 @@
   </section>
 
   <!-- Регистрация -->
-  <section class="register-section">
+  <section class="register-section" id="register">
     <div class="container">
-      <h2>Գրանցվեք Մասնակցելու Համար</h2>
-      <form class="register-form">
-        <div class="form-group">
-          <input type="text" placeholder="Անուն" required>
-        </div>
-        <div class="form-group">
-          <input type="email" placeholder="Էլ. հասցե" required>
-        </div>
-        <div class="form-group">
-          <select required>
-            <option value="">Ընտրել դասընթաց</option>
-            <option>Ներածություն ԱԲ-ին</option>
-            <option>AI ուսուցիչների համար</option>
-          </select>
-        </div>
-        <button type="submit" class="btn">Գրանցվել</button>
-      </form>
+      <div class="register-wrapper">
+        
+        <h2 class="section-title">Գրանցվեք Մասնակցելու Համար</h2>
+        <p class="section-subtitle">Լրացրեք ձևաթուղթը՝ ապահովելու ձեր մասնակցությունը դասընթացին</p>
+        
+        <form class="register-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fullname">Անուն Ազգանուն</label>
+              <div class="input-with-icon">
+                <i class="fas fa-user"></i>
+                <input type="text" id="fullname" placeholder="Ներմուծեք ձեր անունը" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Էլեկտրոնային հասցե</label>
+              <div class="input-with-icon">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="email" placeholder="you@example.com" required>
+              </div>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="course">Ընտրեք դասընթացը</label>
+            <div class="select-wrapper">
+              <i class="fas fa-book"></i>
+              <select id="course" required>
+                <option value="" disabled selected>Ընտրեք դասընթացը ցանկից</option>
+                <option value="intro" selected>Ներածություն ԱԲ-ին (4 շաբաթ)</option>
+                <option value="teachers">AI ուսուցիչների համար (2 շաբաթ)</option>
+                <option value="business">AI բիզնեսի համար (3 շաբաթ)</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="form-footer">
+            <button type="submit" class="btn btn-register">
+              <i class="fas fa-paper-plane"></i> Գրանցվել
+            </button>
+            <p class="form-note">Գրանցվելով դուք համաձայնվում եք մեր <a href="#">օգտագործման պայմաններին</a></p>
+          </div>
+        </form>
+      </div>
     </div>
   </section>
 
@@ -119,5 +147,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
