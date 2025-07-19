@@ -4,45 +4,133 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI4ALL - Գլխավոր</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- Шапка -->
   <header class="header">
-    <img src="files/AI4ALL-01.png" alt="AI4ALL Logo" class="logo">
-    <nav>
-      <ul class="nav">
-        <li><a href="index.html">Գլխավոր</a></li>
-        <li><a href="about.html">Մեր Մասին</a></li>
-        <li><a href="courses.html">Դասընթացներ</a></li>
-      </ul>
-    </nav>
+    <div class="container header-container">
+      <a href="index.html">
+        <img src="files/AI4ALL-01.png" alt="AI4ALL Logo" class="logo">
+      </a>
+      
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      
+      <nav>
+        <ul class="nav">
+          <li><a href="index.html" class="active">Գլխավոր</a></li>
+          <li><a href="about.html">Մեր Մասին</a></li>
+          <li><a href="courses.html">Դասընթացներ</a></li>
+          <li><a href="blog.html">Բլոգ</a></li>
+          <li><a href="contact.html">Կապ</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
+  <!-- Герой-секция -->
   <section class="hero">
-    <h1>Արհեստական Բանականությունը Բոլորի Համար</h1>
-    <p>AI4ALL-ը կրթական նախաձեռնություն է՝ նախատեսված բոլորի համար, ովքեր ուզում են հասկանալ և կիրառել արհեստական բանականություն։</p>
-    <a href="about.html" class="cta-button">Իմանալ ավելին</a>
+    <div class="container">
+      <div class="hero-content">
+        <h1>Արհեստական Բանականությունը Բոլորի Համար</h1>
+        <p>AI4ALL-ը կրթական նախաձեռնություն է՝ նախատեսված բոլորի համար, ովքեր ուզում են հասկանալ և կիրառել արհեստական բանականություն։</p>
+        <div class="hero-btns">
+          <a href="courses.html" class="btn">Դասընթացներ</a>
+          <a href="about.html" class="btn btn-secondary">Իմանալ ավելին</a>
+        </div>
+      </div>
+      <img src="files/hero-ai.png" alt="AI Illustration" class="hero-img">
+    </div>
   </section>
 
+  <!-- Преимущества -->
   <section class="benefits">
-    <h2>Ծրագրի առավելությունները</h2>
-    <ul>
-      <li>✅ Ժամանակակից թեմաներ</li>
-      <li>✅ Դասընթացներ հայերենով</li>
-      <li>✅ Ինտերակտիվ աշխատարաններ</li>
-      <li>✅ Մրցակցային հմտություններ գլոբալ շուկայում</li>
-    </ul>
+    <div class="container">
+      <h2>Ծրագրի առավելությունները</h2>
+      
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3>Ժամանակակից թեմաներ</h3>
+          <p>Սովորեք ամենաարդիական AI տեխնոլոգիաները</p>
+        </div>
+        
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-language"></i>
+          </div>
+          <h3>Դասընթացներ հայերենով</h3>
+          <p>Մատչելի բովանդակություն մայրենի լեզվով</p>
+        </div>
+        
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-hands-helping"></i>
+          </div>
+          <h3>Ինտերակտիվ աշխատարաններ</h3>
+          <p>Գործնական հմտությունների զարգացում</p>
+        </div>
+        
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-globe"></i>
+          </div>
+          <h3>Մրցակցային հմտություններ</h3>
+          <p>Պատրաստվեք գլոբալ շուկայի պահանջներին</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section class="media">
-    <h2>Մասնակիցների Մոտեցումը</h2>
-    <blockquote>«AI4ALL-ը ինձ օգնեց սկսել իմ ճանապարհը ՏՏ ոլորտում»</blockquote>
-    <iframe src="https://www.youtube.com/embed/egHbkaSYx6w" title="AI4ALL Բուն TV"></iframe>
-  </section>
-
+  <!-- Подвал -->
   <footer class="footer">
-    <p>Կապ մեզ հետ՝ <a href="mailto:info@ai4all.am">info@ai4all.am</a></p>
-    <p>&copy; 2025 AI4ALL Initiative</p>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-about">
+          <img src="files/AI4ALL-01-white.png" alt="AI4ALL Logo" class="footer-logo">
+          <p>Արհեստական բանականության կրթական նախաձեռնություն Հայաստանում</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Հղումներ</h3>
+          <ul>
+            <li><a href="about.html">Մեր Մասին</a></li>
+            <li><a href="courses.html">Դասընթացներ</a></li>
+            <li><a href="blog.html">Բլոգ</a></li>
+            <li><a href="contact.html">Կապ</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h3>Կապ</h3>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> Երևան, Հայաստան</li>
+            <li><i class="fas fa-phone"></i> +374 12 345678</li>
+            <li><i class="fas fa-envelope"></i> info@ai4all.am</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="copyright">
+        <p>&copy; 2025 AI4ALL Initiative by EIF. Բոլոր իրավունքները պաշտպանված են</p>
+      </div>
+    </div>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

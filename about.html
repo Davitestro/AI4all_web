@@ -4,53 +4,129 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Մեր Մասին | AI4ALL</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- Шапка (аналогичная index.html) -->
   <header class="header">
-    <img src="files/AI4ALL-01.png" alt="AI4ALL Logo" class="logo">
-    <nav>
-      <ul class="nav">
-        <li><a href="index.html">Գլխավոր</a></li>
-        <li><a href="about.html">Մեր Մասին</a></li>
-        <li><a href="courses.html">Դասընթացներ</a></li>
-      </ul>
-    </nav>
+    <div class="container header-container">
+      <a href="index.html">
+        <img src="files/AI4ALL-01.png" alt="AI4ALL Logo" class="logo">
+      </a>
+      
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      
+      <nav>
+        <ul class="nav">
+          <li><a href="index.html" class="active">Գլխավոր</a></li>
+          <li><a href="about.html">Մեր Մասին</a></li>
+          <li><a href="courses.html">Դասընթացներ</a></li>
+          <li><a href="blog.html">Բլոգ</a></li>
+          <li><a href="contact.html">Կապ</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section class="about">
-    <h2>Ի՞նչ է AI4ALL-ը</h2>
-    <p>AI4ALL-ը EIF հիմնադրամի նախաձեռնություն է՝ ստեղծված Հայաստանի բնակիչներին հասանելի դարձնելու արհեստական բանականության գործիքները։ Այն նախատեսված է տարբեր ոլորտների և տարիքային խմբերի համար։</p>
+  <!-- О программе -->
+  <section class="about-section">
+    <div class="container">
+      <h2>Ի՞նչ է AI4ALL-ը</h2>
+      <p>AI4ALL-ը EIF հիմնադրամի նախաձեռնություն է՝ ստեղծված Հայաստանի բնակիչներին հասանելի դարձնելու արհեստական բանականության գործիքները։ Այն նախատեսված է տարբեր ոլորտների և տարիքային խմբերի համար։</p>
+      
+      <div class="mission-vision">
+        <div class="mission">
+          <h3><i class="fas fa-bullseye"></i> Առաքելություն</h3>
+          <p>AI գիտելիքների տարածում Հայաստանում</p>
+        </div>
+        <div class="vision">
+          <h3><i class="fas fa-eye"></i> Տեսլական</h3>
+          <p>Հայաստանը՝ որպես տարածաշրջանային AI կենտրոն</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section class="audience">
-    <h2>Ում համար է ծրագիրը</h2>
-    <ul>
-      <li>🎓 Երիտասարդներ՝ դպրոցներում և համալսարաններում</li>
-      <li>🧑‍🏫 Ուսուցիչներ՝ կրթությունը բարելավելու համար</li>
-      <li>🏢 ՓՄՁ ներկայացուցիչներ՝ ավտոմատացման հնարավորություններով</li>
-      <li>💻 Մասնագետներ՝ մրցակցային հմտություններ զարգացնելու համար</li>
-    </ul>
+  <!-- Для кого -->
+  <section class="audience-section">
+    <div class="container">
+      <h2>Ում համար է ծրագիրը</h2>
+      
+      <div class="audience-grid">
+        <div class="audience-card">
+          <i class="fas fa-graduation-cap"></i>
+          <h3>Ուսանողներ</h3>
+          <p>Դպրոցականներ և համալսարանցիներ</p>
+        </div>
+        
+        <div class="audience-card">
+          <i class="fas fa-chalkboard-teacher"></i>
+          <h3>Ուսուցիչներ</h3>
+          <p>Կրթությունը բարելավելու համար</p>
+        </div>
+        
+        <div class="audience-card">
+          <i class="fas fa-briefcase"></i>
+          <h3>Բիզնես</h3>
+          <p>ՓՄՁ ներկայացուցիչներ</p>
+        </div>
+        
+        <div class="audience-card">
+          <i class="fas fa-user-tie"></i>
+          <h3>Մասնագետներ</h3>
+          <p>Մրցունակություն զարգացնելու համար</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section class="cases">
-    <h2>Հաջողության Պատմություններ</h2>
-    <p>📍 Անահիտը՝ ուսուցչուհի, AI4ALL-ի շնորհիվ ստեղծել է քվիզներ, որոնք օգտագործվում են իր դասընթացներում։<br>
-       📍 Արմենը՝ ուսանող, այժմ աշխատում է AI ստարտափում։</p>
-  </section>
-
-  <section class="partners">
-    <h2>Գործընկերներ</h2>
-    <ul>
-      <li>EIF - Enterprise Incubator Foundation</li>
-      <li>ԿԳՄՍՆ</li>
-      <li>ՏՏ ընկերություններ</li>
-    </ul>
-  </section>
-
+   <!-- Подвал -->
   <footer class="footer">
-    <p>Կապ մեզ հետ՝ <a href="mailto:info@ai4all.am">info@ai4all.am</a></p>
-    <p>&copy; 2025 AI4ALL Initiative</p>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-about">
+          <img src="files/AI4ALL-01-white.png" alt="AI4ALL Logo" class="footer-logo">
+          <p>Արհեստական բանականության կրթական նախաձեռնություն Հայաստանում</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Հղումներ</h3>
+          <ul>
+            <li><a href="about.html">Մեր Մասին</a></li>
+            <li><a href="courses.html">Դասընթացներ</a></li>
+            <li><a href="blog.html">Բլոգ</a></li>
+            <li><a href="contact.html">Կապ</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h3>Կապ</h3>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> Երևան, Հայաստան</li>
+            <li><i class="fas fa-phone"></i> +374 12 345678</li>
+            <li><i class="fas fa-envelope"></i> info@ai4all.am</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="copyright">
+        <p>&copy; 2025 AI4ALL Initiative by EIF. Բոլոր իրավունքները պաշտպանված են</p>
+      </div>
+    </div>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

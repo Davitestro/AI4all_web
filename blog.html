@@ -3,164 +3,137 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Բլոգ - AI4ALL</title>
-  <style>
-    /* Обнуление стилей */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    body {
-      background: #f6f7fb;
-      color: #1d1d1f;
-      line-height: 1.6;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 10%;
-      background: linear-gradient(90deg, #0052cc, #007bff);
-      color: white;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-
-    .logo {
-      height: 50px;
-    }
-
-    .nav {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-    }
-
-    .nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      transition: opacity 0.3s;
-    }
-
-    .nav a:hover {
-      opacity: 0.8;
-    }
-
-    section {
-      padding: 60px 10%;
-    }
-
-    .blog {
-      background: white;
-      margin: 30px auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    }
-
-    h2 {
-      margin-bottom: 20px;
-      font-size: 1.8rem;
-      color: #0052cc;
-    }
-
-    .blog ul {
-      list-style: none;
-      margin-bottom: 20px;
-    }
-
-    .blog a {
-      color: #0052cc;
-      text-decoration: none;
-      display: block;
-      margin-bottom: 10px;
-      padding-left: 10px;
-      border-left: 3px solid #007bff;
-      transition: color 0.3s;
-    }
-
-    .blog a:hover {
-      color: #003d99;
-    }
-
-    .blog-content article {
-      margin-bottom: 30px;
-    }
-
-    .blog-content h3 {
-      font-size: 1.4rem;
-      color: #1d1d1f;
-      margin-bottom: 10px;
-    }
-
-    .footer {
-      background: #1d1d1f;
-      color: #f1f1f1;
-      padding: 30px 10%;
-      text-align: center;
-    }
-
-    .footer a {
-      color: #82b4ff;
-      text-decoration: none;
-      margin: 0 5px;
-    }
-
-    .footer a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <title>Բլոգ | AI4ALL</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <img src="AI4ALL-01.png" alt="AI4ALL Logo" class="logo">
-    <ul class="nav">
-      <li><a href="index.html">Մեր Մասին</a></li>
-      <li><a href="index.html#benefits">Առավելությունները</a></li>
-      <li><a href="index.html#media">Մեդիա</a></li>
-      <li><a href="blog.html">Բլոգ</a></li>
-      <li><a href="contact.html">Կապ</a></li>
-    </ul>
+  <!-- Шапка (аналогичная index.html) -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html">
+        <img src="files/AI4ALL-01.png" alt="AI4ALL Logo" class="logo">
+      </a>
+      <nav>
+        <ul class="nav">
+          <li><a href="index.html">Գլխավոր</a></li>
+          <li><a href="about.html">Մեր Մասին</a></li>
+          <li><a href="courses.html">Դասընթացներ</a></li>
+          <li><a href="blog.html">Բլոգ</a></li>
+          <li><a href="contact.html" class="active">Կապ</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
   </header>
 
-  <section class="blog">
-    <h2>Բլոգ</h2>
-    <ul>
-      <li><a href="#post1">Ինչպես է ԱԲ-ը փոխում կրթությունը</a></li>
-      <li><a href="#post2">EIF-ն ու ուսուցիչները</a></li>
-      <li><a href="#post3">ԱԲ-ի ապագան Հայաստանում</a></li>
-      <li><a href="#post4">Ինչու է կարևոր սովորել ԱԲ հիմա</a></li>
-    </ul>
-    <div class="blog-content">
-      <article id="post1">
-        <h3>Ինչպես է ԱԲ-ը փոխում կրթությունը</h3>
-        <p>Արհեստական բանականությունը վերափոխում է կրթական համակարգը՝ առաջարկելով անհատականացված ուսուցման փորձ: Այն օգնում.ArrayList է ուսուցիչներին և ուսանողներին ավելի արդյունավետ աշխատել...</p>
-      </article>
-      <article id="post2">
-        <h3>EIF-ն ու ուսուցիչները</h3>
-        <p>EIF-ի նախաձեռնությունները աջակցում են ուսուցիչներին՝ ներդնելով նորագույն տեխնոլոգիաներ դասապրոցեսում...</p>
-      </article>
-      <article id="post3">
-        <h3>ԱԲ-ի ապագան Հայաստանում</h3>
-        <p>Հայաստանը դառնում է տեխնոլոգիական կենտրոն, և ԱԲ-ն այս գործընթացում առանցքային դեր է խաղում...</p>
-      </article>
-      <article id="post4">
-        <h3>Ինչու է կարևոր սովորել ԱԲ հիմա</h3>
-        <p>ԱԲ-ի հմտությունները դառնում են պարտադիր գլոբալ շուկայում մրցակցելու համար...</p>
-      </article>
+  <!-- Блог -->
+  <section class="blog-section">
+    <div class="container">
+      <h2><i class="fas fa-blog"></i> AI4ALL Բլոգ</h2>
+      
+      <div class="blog-wrapper">
+        <!-- Основной контент -->
+        <main class="blog-content">
+          <article class="blog-post">
+            <img src="files/blog1.jpg" alt="AI in Education" class="post-image">
+            <div class="post-meta">
+              <span><i class="far fa-calendar-alt"></i> 15 Հունիս, 2025</span>
+              <span><i class="far fa-user"></i> Լուսինե Ղուկասյան</span>
+            </div>
+            <h3>Ինչպես է ԱԲ-ը փոխում կրթությունը</h3>
+            <p>Արհեստական բանականությունը վերափոխում է կրթական համակարգը՝ առաջարկելով անհատականացված ուսուցման փորձ: Այն օգնում է ուսուցիչներին և ուսանողներին ավելի արդյունավետ աշխատել...</p>
+            <a href="blog-single.html" class="read-more">Կարդալ ավելին <i class="fas fa-arrow-right"></i></a>
+          </article>
+          
+          <!-- Другие статьи -->
+        </main>
+        
+        <!-- Сайдбар -->
+        <aside class="blog-sidebar">
+          <div class="sidebar-widget">
+            <h4><i class="fas fa-search"></i> Որոնում</h4>
+            <form class="search-form">
+              <input type="text" placeholder="Որոնել...">
+              <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+          </div>
+          
+          <div class="sidebar-widget">
+            <h4><i class="fas fa-tags"></i> Տեգեր</h4>
+            <div class="tags">
+              <a href="#">ԱԲ</a>
+              <a href="#">Կրթություն</a>
+              <a href="#">Ուսուցում</a>
+              <a href="#">Տեխնոլոգիաներ</a>
+              <a href="#">Հայաստան</a>
+            </div>
+          </div>
+          
+          <div class="sidebar-widget">
+            <h4><i class="far fa-newspaper"></i> Վերջին նյութեր</h4>
+            <ul class="recent-posts">
+              <li>
+                <a href="#">EIF-ն ու ուսուցիչները</a>
+                <span>10 Հունիս, 2025</span>
+              </li>
+              <li>
+                <a href="#">ԱԲ-ի ապագան Հայաստանում</a>
+                <span>5 Հունիս, 2025</span>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
     </div>
   </section>
 
+  <!-- Подвал (аналогичный index.html) -->
   <footer class="footer">
-    <p>Կապ մեզ հետ՝ <a href="https://facebook.com">Facebook</a> | <a href="https://instagram.com">Instagram</a></p>
-    <p>© 2025 AI4ALL Initiative by EIF</p>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-about">
+          <img src="files/AI4ALL-01-white.png" alt="AI4ALL Logo" class="footer-logo">
+          <p>Արհեստական բանականության կրթական նախաձեռնություն Հայաստանում</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Հղումներ</h3>
+          <ul>
+            <li><a href="about.html">Մեր Մասին</a></li>
+            <li><a href="courses.html">Դասընթացներ</a></li>
+            <li><a href="blog.html">Բլոգ</a></li>
+            <li><a href="contact.html">Կապ</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h3>Կապ</h3>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> Երևան, Հայաստան</li>
+            <li><i class="fas fa-phone"></i> +374 12 345678</li>
+            <li><i class="fas fa-envelope"></i> info@ai4all.am</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="copyright">
+        <p>&copy; 2025 AI4ALL Initiative by EIF. Բոլոր իրավունքները պաշտպանված են</p>
+      </div>
+    </div>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

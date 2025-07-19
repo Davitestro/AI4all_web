@@ -4,52 +4,120 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Դասընթացներ | AI4ALL</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="header">
-    <img src="files/AI4ALL-01.png" alt="AI4ALL Logo" class="logo">
-    <nav>
-      <ul class="nav">
-        <li><a href="index.html">Գլխավոր</a></li>
-        <li><a href="about.html">Մեր Մասին</a></li>
-        <li><a href="courses.html">Դասընթացներ</a></li>
-      </ul>
-    </nav>
+    <div class="container header-container">
+      <a href="index.html">
+        <img src="files/AI4ALL-01.png" alt="AI4ALL Logo" class="logo">
+      </a>
+      
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      
+      <nav>
+        <ul class="nav">
+          <li><a href="index.html" class="active">Գլխավոր</a></li>
+          <li><a href="about.html">Մեր Մասին</a></li>
+          <li><a href="courses.html">Դասընթացներ</a></li>
+          <li><a href="blog.html">Բլոգ</a></li>
+          <li><a href="contact.html">Կապ</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section class="courses">
-    <h2>Դասընթացներ և Միջոցառումներ</h2>
-    <ul>
-      <li>
-        <strong>Ներածություն ԱԲ-ին</strong> – 4 շաբաթ, օնլայն<br>
-        <em>Սովորեք հիմքերը, օգտագործեք AI գործիքներ</em>
-      </li>
-      <li>
-        <strong>AI ուսուցիչների համար</strong> – 2 շաբաթ, օֆֆլայն<br>
-        <em>Ինչպես կիրառել ԱԲ-ը դասապրոցեսում</em>
-      </li>
-    </ul>
+  <!-- Курсы -->
+  <section class="courses-section">
+    <div class="container">
+      <h2>Դասընթացներ և Միջոցառումներ</h2>
+      
+      <div class="courses-grid">
+        <div class="course-card">
+          <img src="files/course1.jpg" alt="AI Introduction" class="course-img">
+          <div class="course-content">
+            <h3>Ներածություն ԱԲ-ին</h3>
+            <div class="course-meta">
+              <span><i class="far fa-clock"></i> 4 շաբաթ</span>
+              <span><i class="fas fa-laptop"></i> Օնլայն</span>
+            </div>
+            <p>Սովորեք հիմքերը, օգտագործեք AI գործիքներ</p>
+            <a href="#" class="btn">Գրանցվել</a>
+          </div>
+        </div>
+        
+        <!-- Другие курсы -->
+      </div>
+    </div>
   </section>
 
-  <section class="register">
-    <h2>Գրանցվեք Մասնակցելու Համար</h2>
-    <form>
-      <input type="text" placeholder="Անուն" required>
-      <input type="email" placeholder="Էլ. հասցե" required>
-      <button type="submit">Գրանցվել</button>
-    </form>
-  </section>
-
-  <section class="reviews">
-    <h2>Մասնակիցների Կարծիքներ</h2>
-    <blockquote>«Դասընթացը փոխեց իմ հայացքը տեխնոլոգիայի հանդեպ։ Շնորհակալություն»</blockquote>
-    <blockquote>«Իմ առաջին AI նախագիծը ստեղծեցի հենց այստեղ»</blockquote>
+  <!-- Регистрация -->
+  <section class="register-section">
+    <div class="container">
+      <h2>Գրանցվեք Մասնակցելու Համար</h2>
+      <form class="register-form">
+        <div class="form-group">
+          <input type="text" placeholder="Անուն" required>
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Էլ. հասցե" required>
+        </div>
+        <div class="form-group">
+          <select required>
+            <option value="">Ընտրել դասընթաց</option>
+            <option>Ներածություն ԱԲ-ին</option>
+            <option>AI ուսուցիչների համար</option>
+          </select>
+        </div>
+        <button type="submit" class="btn">Գրանցվել</button>
+      </form>
+    </div>
   </section>
 
   <footer class="footer">
-    <p>Կապ մեզ հետ՝ <a href="mailto:info@ai4all.am">info@ai4all.am</a></p>
-    <p>&copy; 2025 AI4ALL Initiative</p>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-about">
+          <img src="files/AI4ALL-01-white.png" alt="AI4ALL Logo" class="footer-logo">
+          <p>Արհեստական բանականության կրթական նախաձեռնություն Հայաստանում</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Հղումներ</h3>
+          <ul>
+            <li><a href="about.html">Մեր Մասին</a></li>
+            <li><a href="courses.html">Դասընթացներ</a></li>
+            <li><a href="blog.html">Բլոգ</a></li>
+            <li><a href="contact.html">Կապ</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h3>Կապ</h3>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> Երևան, Հայաստան</li>
+            <li><i class="fas fa-phone"></i> +374 12 345678</li>
+            <li><i class="fas fa-envelope"></i> info@ai4all.am</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="copyright">
+        <p>&copy; 2025 AI4ALL Initiative by EIF. Բոլոր իրավունքները պաշտպանված են</p>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

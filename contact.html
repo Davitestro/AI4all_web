@@ -3,168 +3,136 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Կապ - AI4ALL</title>
-  <style>
-    /* Обнуление стилей */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    body {
-      background: #f6f7fb;
-      color: #1d1d1f;
-      line-height: 1.6;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 10%;
-      background: linear-gradient(90deg, #0052cc, #007bff);
-      color: white;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-
-    .logo {
-      height: 50px;
-    }
-
-    .nav {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-    }
-
-    .nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      transition: opacity 0.3s;
-    }
-
-    .nav a:hover {
-      opacity: 0.8;
-    }
-
-    section {
-      padding: 60px 10%;
-    }
-
-    .contact {
-      background: white;
-      margin: 30px auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    }
-
-    h2 {
-      margin-bottom: 20px;
-      font-size: 1.8rem;
-      color: #0052cc;
-    }
-
-    .contact input,
-    .contact textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-family: inherit;
-    }
-
-    .contact textarea {
-      min-height: 100px;
-      resize: vertical;
-    }
-
-    .contact button {
-      background: #0052cc;
-      color: white;
-      padding: 12px 24px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    .contact button:hover {
-      background: #003d99;
-    }
-
-    .contact div {
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    .contact div p {
-      margin-bottom: 20px;
-    }
-
-    .contact div a {
-      color: #0052cc;
-      text-decoration: none;
-    }
-
-    .contact div a:hover {
-      color: #003d99;
-    }
-
-    .footer {
-      background: #1d1d1f;
-      color: #f1f1f1;
-      padding: 30px 10%;
-      text-align: center;
-    }
-
-    .footer a {
-      color: #82b4ff;
-      text-decoration: none;
-      margin: 0 5px;
-    }
-
-    .footer a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <title>Կապ | AI4ALL</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <img src="AI4ALL-01.png" alt="AI4ALL Logo" class="logo">
-    <ul class="nav">
-      <li><a href="index.html">Մեր Մասին</a></li>
-      <li><a href="index.html#benefits">Առավելությունները</a></li>
-      <li><a href="index.html#media">Մեդիա</a></li>
-      <li><a href="blog.html">Բլոգ</a></li>
-      <li><a href="contact.html">Կապ</a></li>
-    </ul>
+  <!-- Шапка (аналогичная index.html) -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html">
+        <img src="files/AI4ALL-01.png" alt="AI4ALL Logo" class="logo">
+      </a>
+      <nav>
+        <ul class="nav">
+          <li><a href="index.html">Գլխավոր</a></li>
+          <li><a href="about.html">Մեր Մասին</a></li>
+          <li><a href="courses.html">Դասընթացներ</a></li>
+          <li><a href="blog.html">Բլոգ</a></li>
+          <li><a href="contact.html" class="active">Կապ</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
   </header>
 
-  <section class="contact">
-    <h2>Կապվեք մեզ հետ</h2>
-    <div>
-      <p>Լրացրեք ստորև բերված ձևաթուղթը՝ մեզ հետ կապ հաստատելու համար:</p>
-      <div style="background: #f0f4ff; padding: 20px; border-radius: 8px;">
-        <input type="text" placeholder="Անուն">
-        <input type="email" placeholder="Էլ. փոստ">
-        <textarea placeholder="Հաղորդագրություն"></textarea>
-        <button onclick="alert('Հաղորդագրությունը ուղարկված է!')">Ուղարկել</button>
+  <!-- Контактная форма -->
+  <section class="contact-section">
+    <div class="container">
+      <h2><i class="fas fa-envelope"></i> Կապվեք մեզ հետ</h2>
+      
+      <div class="contact-wrapper">
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Անուն*" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Էլ. փոստ*" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" id="phone" placeholder="Հեռախոս">
+            </div>
+            <div class="form-group">
+              <textarea id="message" placeholder="Ձեր հաղորդագրությունը*" required></textarea>
+            </div>
+            <button type="submit" class="btn">
+              <i class="fas fa-paper-plane"></i> Ուղարկել
+            </button>
+          </form>
+        </div>
+        
+        <div class="contact-info">
+          <h3><i class="fas fa-map-marker-alt"></i> Հասցե</h3>
+          <p>Երևան, Արշակունյաց 34</p>
+          
+          <h3><i class="fas fa-phone-alt"></i> Հեռախոս</h3>
+          <p><a href="tel:+37412345678">+374 12 34 56 78</a></p>
+          
+          <h3><i class="fas fa-envelope"></i> Էլ. փոստ</h3>
+          <p><a href="mailto:info@ai4all.am">info@ai4all.am</a></p>
+          
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
       </div>
-      <p>Հետևեք մեզ սոցիալական ցանցերում՝ <a href="https://facebook.com">Facebook</a> | <a href="https://instagram.com">Instagram</a></p>
     </div>
   </section>
 
+  <!-- Карта -->
+  <section class="map-section">
+    <div class="container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.093247216021!2d44.51531631575939!3d40.18687207939146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abcf2a0a0e0c9%3A0x3c4dca9a1a4a9a9a!2sEnterprise%20Incubator%20Foundation!5e0!3m2!1sen!2sam!4v1620000000000!5m2!1sen!2sam" 
+              width="100%" 
+              height="450" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Подвал (аналогичный index.html) -->
   <footer class="footer">
-    <p>Կապ մեզ հետ՝ <a href="https://facebook.com">Facebook</a> | <a href="https://instagram.com">Instagram</a></p>
-    <p>© 2025 AI4ALL Initiative by EIF</p>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-about">
+          <img src="files/AI4ALL-01-white.png" alt="AI4ALL Logo" class="footer-logo">
+          <p>Արհեստական բանականության կրթական նախաձեռնություն Հայաստանում</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Հղումներ</h3>
+          <ul>
+            <li><a href="about.html">Մեր Մասին</a></li>
+            <li><a href="courses.html">Դասընթացներ</a></li>
+            <li><a href="blog.html">Բլոգ</a></li>
+            <li><a href="contact.html">Կապ</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h3>Կապ</h3>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> Երևան, Հայաստան</li>
+            <li><i class="fas fa-phone"></i> +374 12 345678</li>
+            <li><i class="fas fa-envelope"></i> info@ai4all.am</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="copyright">
+        <p>&copy; 2025 AI4ALL Initiative by EIF. Բոլոր իրավունքները պաշտպանված են</p>
+      </div>
+    </div>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
