@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Կապ - AI4ALL</title>
+  <style>
+    /* Обнуление стилей */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f6f7fb;
+      color: #1d1d1f;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      background: linear-gradient(90deg, #0052cc, #007bff);
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      height: 50px;
+    }
+
+    .nav {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: opacity 0.3s;
+    }
+
+    .nav a:hover {
+      opacity: 0.8;
+    }
+
+    section {
+      padding: 60px 10%;
+    }
+
+    .contact {
+      background: white;
+      margin: 30px auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+      color: #0052cc;
+    }
+
+    .contact input,
+    .contact textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: inherit;
+    }
+
+    .contact textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    .contact button {
+      background: #0052cc;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .contact button:hover {
+      background: #003d99;
+    }
+
+    .contact div {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contact div p {
+      margin-bottom: 20px;
+    }
+
+    .contact div a {
+      color: #0052cc;
+      text-decoration: none;
+    }
+
+    .contact div a:hover {
+      color: #003d99;
+    }
+
+    .footer {
+      background: #1d1d1f;
+      color: #f1f1f1;
+      padding: 30px 10%;
+      text-align: center;
+    }
+
+    .footer a {
+      color: #82b4ff;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="AI4ALL-01.png" alt="AI4ALL Logo" class="logo">
+    <ul class="nav">
+      <li><a href="index.html">Մեր Մասին</a></li>
+      <li><a href="index.html#benefits">Առավելությունները</a></li>
+      <li><a href="index.html#media">Մեդիա</a></li>
+      <li><a href="blog.html">Բլոգ</a></li>
+      <li><a href="contact.html">Կապ</a></li>
+    </ul>
+  </header>
+
+  <section class="contact">
+    <h2>Կապվեք մեզ հետ</h2>
+    <div>
+      <p>Լրացրեք ստորև բերված ձևաթուղթը՝ մեզ հետ կապ հաստատելու համար:</p>
+      <div style="background: #f0f4ff; padding: 20px; border-radius: 8px;">
+        <input type="text" placeholder="Անուն">
+        <input type="email" placeholder="Էլ. փոստ">
+        <textarea placeholder="Հաղորդագրություն"></textarea>
+        <button onclick="alert('Հաղորդագրությունը ուղարկված է!')">Ուղարկել</button>
+      </div>
+      <p>Հետևեք մեզ սոցիալական ցանցերում՝ <a href="https://facebook.com">Facebook</a> | <a href="https://instagram.com">Instagram</a></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Կապ մեզ հետ՝ <a href="https://facebook.com">Facebook</a> | <a href="https://instagram.com">Instagram</a></p>
+    <p>© 2025 AI4ALL Initiative by EIF</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
