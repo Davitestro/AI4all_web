@@ -23,6 +23,29 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
+  // ===== Навигация: установка активного пункта =====
+  const navLinks = document.querySelectorAll('.nav a');
+  // Get the current page's pathname and handle edge cases
+  let currentPath = window.location.pathname.split('/').pop();
+  if (currentPath === '' || currentPath === '/') {
+      currentPath = 'index.html'; // Explicitly set for root URL
+  }
+
+  // Debug: Log the current path and link hrefs
+  console.log('Current Path:', currentPath);
+  navLinks.forEach(link => {
+      console.log('Link href:', link.getAttribute('href'));
+  });
+
+  // Set active class
+  navLinks.forEach(link => {
+      link.classList.remove('active'); // Remove active class from all links
+      const linkPath = link.getAttribute('href');
+      if (linkPath === currentPath || (currentPath === 'index.html' && linkPath === 'index.html')) {
+          link.classList.add('active'); // Add active class to matching link
+      }
+  });
+
   // ===== Плавная прокрутка =====
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
@@ -80,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (elPosition < screenPosition) {
         el.classList.add('animated');
       }
-    });
+    })();
   };
   
   window.addEventListener('scroll', animateOnScroll);
