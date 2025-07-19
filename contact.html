@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Шапка (аналогичная index.html) -->
+
   <header class="header">
     <div class="container header-container">
       <a href="index.html">
@@ -32,67 +32,76 @@
     </div>
   </header>
 
-  <!-- Контактная форма -->
+
   <section class="contact-section">
     <div class="container">
-      <h2><i class="fas fa-envelope"></i> Կապվեք մեզ հետ</h2>
+      <div class="section-header">
+        <h2><i class="fas fa-envelope-open-text"></i> Կապվեք մեզ հետ</h2>
+        <p>Մենք պատրաստ ենք պատասխանել ձեր բոլոր հարցերին։ Լրացրեք ձևը կամ օգտագործեք մեր կոնտակտային տվյալները։</p>
+      </div>
       
       <div class="contact-wrapper">
-        <div class="contact-form">
-          <form id="contactForm">
+        <div class="contact-form-container">
+          <form id="contactForm" class="elegant-form">
             <div class="form-group">
-              <input type="text" id="name" placeholder="Անուն*" required>
+              <label for="name">Անուն*</label>
+              <input type="text" id="name" placeholder="Ձեր անունը" required>
             </div>
             <div class="form-group">
-              <input type="email" id="email" placeholder="Էլ. փոստ*" required>
+              <label for="email">Էլ. փոստ*</label>
+              <input type="email" id="email" placeholder="Ձեր էլ. փոստը" required>
             </div>
             <div class="form-group">
-              <input type="tel" id="phone" placeholder="Հեռախոս">
+              <label for="phone">Հեռախոս</label>
+              <input type="tel" id="phone" placeholder="Ձեր հեռախոսահամարը">
             </div>
             <div class="form-group">
-              <textarea id="message" placeholder="Ձեր հաղորդագրությունը*" required></textarea>
+              <label for="message">Հաղորդագրություն*</label>
+              <textarea id="message" placeholder="Ձեր հաղորդագրությունը..." required></textarea>
             </div>
-            <button type="submit" class="btn">
-              <i class="fas fa-paper-plane"></i> Ուղարկել
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i> Ուղարկել հաղորդագրությունը
             </button>
           </form>
         </div>
         
-        <div class="contact-info">
-          <h3><i class="fas fa-map-marker-alt"></i> Հասցե</h3>
-          <p>Երևան, Արշակունյաց 34</p>
-          
-          <h3><i class="fas fa-phone-alt"></i> Հեռախոս</h3>
-          <p><a href="tel:+37412345678">+374 12 34 56 78</a></p>
-          
-          <h3><i class="fas fa-envelope"></i> Էլ. փոստ</h3>
-          <p><a href="mailto:info@ai4all.am">info@ai4all.am</a></p>
-          
-          <div class="social-links">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
+        <div class="contact-info-container">
+          <div class="contact-info-card">
+            <h3><i class="fas fa-map-marker-alt"></i> Մեր հասցեն</h3>
+            <p>Երևան, Արշակունյաց 34</p>
+            
+            <h3><i class="fas fa-phone-alt"></i> Զանգահարեք մեզ</h3>
+            <p><a href="tel:+37412345678">+374 12 34 56 78</a></p>
+            
+            <h3><i class="fas fa-envelope"></i> Էլեկտրոնային հասցե</h3>
+            <p><a href="mailto:info@ai4all.am">info@ai4all.am</a></p>
+            
+            <h3><i class="fas fa-clock"></i> Աշխատանքային ժամեր</h3>
+            <p>Երկ-Ուրբ: 09:00 - 18:00</p>
+            <p>Շաբաթ, Կիրակի: Փակ</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Карта -->
   <section class="map-section">
     <div class="container">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.093247216021!2d44.51531631575939!3d40.18687207939146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abcf2a0a0e0c9%3A0x3c4dca9a1a4a9a9a!2sEnterprise%20Incubator%20Foundation!5e0!3m2!1sen!2sam!4v1620000000000!5m2!1sen!2sam" 
-              width="100%" 
-              height="450" 
-              style="border:0;" 
-              allowfullscreen="" 
-              loading="lazy">
-      </iframe>
+      <div class="section-header">
+        <h2><i class="fas fa-map-marked-alt"></i> Մեր գտնվելու վայրը</h2>
+      </div>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.093247216021!2d44.51531631575939!3d40.18687207939146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abcf2a0a0e0c9%3A0x3c4dca9a1a4a9a9a!2sEnterprise%20Incubator%20Foundation!5e0!3m2!1sen!2sam!4v1620000000000!5m2!1sen!2sam" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+        </iframe>
+      </div>
     </div>
   </section>
 
-  <!-- Подвал (аналогичный index.html) -->
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
@@ -100,10 +109,8 @@
           <img src="files/AI4ALL-01-white.png" alt="AI4ALL Logo" class="footer-logo">
           <p>Արհեստական բանականության կրթական նախաձեռնություն Հայաստանում</p>
           <div class="social-links">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/AI4ALLbyEIF"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/ai4allbyeif/"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
         
